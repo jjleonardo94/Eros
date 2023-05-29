@@ -1,0 +1,133 @@
+:root {
+  --color-primary: #00bcd4;
+  --color-secondary: #fafafa;
+  --color-tertiary: #212121;
+  --color-quaternary: #eceff1;
+  --color-quinary: #424242;
+  --color-senary: #b0bec5;
+  --color-septenary: #90a4ae;
+  --color-octonary: #455a64;
+  --color-nonary: #263238;
+  --color-decenary: #cfd8dc;
+  --color-white: #fff;
+  --color-black: #000;
+  --tw-red: #EC2028;
+}
+
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.txt-primary {
+  color: var(--color-primary);
+}
+
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+
+.txt-secondary {
+  color: var(--color-secondary);
+}
+
+
+.bg-tertiary {
+  background-color: var(--color-tertiary);
+}
+
+
+.txt-tertiary {
+  color: var(--color-tertiary);
+}
+
+
+.bg-quaternary {
+  background-color: var(--color-quaternary);
+}
+
+
+.txt-quaternary {
+  color: var(--color-quaternary);
+}
+
+
+.bg-quinary {
+  background-color: var(--color-quinary);
+}
+
+
+.txt-quinary {
+  color: var(--color-quinary);
+}
+
+
+.bg-senary {
+  background-color: var(--color-senary);
+}
+
+
+.txt-senary {
+  color: var(--color-senary);
+}
+
+
+.bg-septenary {
+  background-color: var(--color-septenary);
+}
+
+
+.txt-septenary {
+  color: var(--color-septenary);
+}
+
+
+.bg-octonary {
+  background-color: var(--color-octonary);
+}
+
+
+.txt-octonary {
+  color: var(--color-octonary);
+}
+
+
+.bg-nonary {
+  background-color: var(--color-nonary);
+}
+
+
+.txt-nonary {
+  color: var(--color-nonary);
+}
+
+
+.bg-decenary {
+  background-color: var(--color-decenary);
+}
+
+
+.txt-decenary {
+  color: var(--color-decenary);
+}
+
+
+.bg-white {
+  background-color: var(--color-white);
+}
+
+
+.txt-white {
+  color: var(--color-white);
+}
+
+
+.bg-black {
+  background-color: var(--color-black);
+}
+
+
+.txt-black {
+  color: var(--color-black);
+}

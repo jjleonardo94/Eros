@@ -1,0 +1,539 @@
+/* Colors routes */
+:root {
+  --blue: #287bff;
+  --white: #fff;
+  --grey: #f5f5f5;
+  --black1: #222;
+  --black2: #999;
+}
+
+/* Invoice */
+
+.main {
+  border: 2px solid var(--black1);
+  width: 50%;
+  margin-left: 20%;
+  padding: 30px;
+}
+
+/* ISO Paper Size */
+@page {
+  size: A4;
+}
+
+@media print {
+  html,
+  body {
+    width: 768px;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .main {
+    border: 2px solid var(--black1);
+    width: 58%;
+    margin-left: 18%;
+    padding: 30px;
+  }
+}
+
+/* headers styles */
+#header {
+  width: 100%;
+  display: table;
+  margin-top: 5px;
+}
+#headerTable {
+  display: table-row-group;
+}
+.headerRow {
+  display: table-row;
+}
+.headerCell {
+  display: table-cell;
+  border: 1px solid var(--black2);
+  /* padding: 4px; */
+  line-height: 1.5;
+  vertical-align: top;
+  width: 30px;
+  padding-left: 7px;
+  font-size: 13px;
+}
+.headerCell2 {
+  display: table-cell;
+  border: 1px solid var(--black2);
+  padding: 25px;
+  line-height: 1.5;
+  vertical-align: top;
+  width: 30px;
+}
+.headerCell3 {
+  display: table-cell;
+  border: 1px solid var(--black2);
+  padding: 2px;
+  padding-left: 7px;
+  line-height: 1.5;
+  vertical-align: top;
+  width: 30px;
+  font-size: 13.5px;
+}
+/* Making the div borders curve */
+.headerCell:first-child {
+  border-top-left-radius: 20px;
+}
+.headerCell:last-child {
+  border-top-right-radius: 20px;
+}
+.headerCell3:first-child {
+  border-bottom-left-radius: 20px;
+}
+.headerCell3:last-child {
+  border-bottom-right-radius: 20px;
+}
+/* End Header styles */
+
+/* Payments styles */
+#payments {
+  width: 100%;
+  display: table;
+  margin-top: 5px;
+}
+#paymentsTable {
+  display: table-row-group;
+  border-left: thick solid #000;
+  height: 15px;
+  left: 50%;
+}
+.paymentRow {
+  display: table-row;
+}
+.paymentCell {
+  display: flex;
+  border: 1px solid var(--black2);
+  line-height: 1.5;
+  vertical-align: top;
+  overflow: hidden;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 22px;
+  font-size: 13px;
+
+}
+
+.paymentCell2 {
+  border: 1px solid var(--black2);
+  line-height: 1.8;
+  justify-content: space-between;
+  font-size: 10.4px;
+  margin-bottom: 1px;
+  padding-left: 8px;
+  
+}
+
+/* Make a vertical line for the div */
+/* .paymentCell:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 50.9%;
+  border-left: 1px solid #999999;
+  transform: translate(-50%);
+  height: 25px;
+  margin-top: 253px;
+} */
+
+.paymentInfo {
+  display: table;
+  margin: 0;
+  padding: 0;
+}
+
+.paymentInputClient {
+  width: 350px;
+  align-items: left;
+  margin-top: 2px;
+  margin-left: 2px;
+  border-radius: 4px;
+  border: 1px solid var(--black2);
+}
+.paymentInputRncClient {
+  width: 292px;
+  align-items: left;
+  margin-left: 2px;
+  border-radius: 4px;
+  border: 1px solid var(--black2);
+}
+.paymentInputDirClient {
+  width: 330px;
+  align-items: left;
+  margin-left: 2px;
+  border-radius: 4px;
+  border: 1px solid var(--black2);
+}
+.paymentInputCodClient {
+  width: 349px;
+  align-items: left;
+  margin-left: 2px;
+  border-radius: 4px;
+  border: 1px solid var(--black2);
+}
+.paymentInputDateClient {
+  width: 123px;
+  align-items: left;
+  margin-left: 2px;
+  border-radius: 4px;
+  border: 1px solid var(--black2);
+}
+.paymentLabelClient {
+  font-size: 13px;
+}
+.paymentLabelRncClient {
+  font-size: 13px;
+}
+.paymentLabelDirClient {
+  font-size: 13px;
+}
+.paymentLabelCodClient {
+  font-size: 13px;
+}
+
+.paymentLabelDateClient {
+  margin-left: -240px;
+  font-size: 13px;
+}
+
+.paymentInputContado {
+  width: 25px;
+  margin-right: 50px;
+}
+.paymentInputCredito {
+  width: 25px;
+}
+
+/* Making the div borders curve */
+.paymentCell:first-child {
+  border-top-left-radius: 20px;
+  border-bottom: none;
+}
+.paymentCell:last-child {
+  border-top-right-radius: 20px;
+  border-bottom: none;
+}
+.paymentCell2:first-child {
+  border-bottom-left-radius: 20px;
+}
+.paymentCell2:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+/* End Payment styles */
+
+/* Capability styles */
+#capability {
+  width: 100%;
+  display: flex;
+  margin-top: 5px;
+  justify-content: space-between;
+}
+#capabilityTable {
+  width: 100%;
+  display: table;
+}
+#capabilityTable2 {
+  display: table;
+  width: 49.5%;
+}
+.capabilityRow {
+  display: table-row;
+}
+.capabilityRow2 {
+  display: table-row;
+}
+
+.capabilityTextTank {
+  font-size: 10.4px;
+  margin-bottom: 1px;
+  padding-left: 8px;
+}
+
+.capabilityInputCapTank {
+  width: 60px;
+  margin-left: 2px;
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid var(--black2);
+}
+
+.capabilityTextVol1 {
+  display: flex;
+  font-size: 10px;
+}
+
+.capabilityInputVol1 {
+  width: 40px;
+  height: 14px;
+  text-align: center;
+  margin-top: 4px;
+  border-radius: 4px;
+  border: 1px solid var(--black2);
+}
+.capabilityTextVol2 {
+  display: flex;
+  font-size: 10px;
+}
+
+.capabilityInputVol2 {
+  width: 40px;
+  height: 14px;
+  text-align: center;
+  margin-top: 12px;
+  margin-left: 2px;
+  border-radius: 4px;
+  border: 1px solid var(--black2);
+}
+.capabilityTextGLS1 {
+  margin-top: 6px;
+  margin-left: 2px;
+}
+.capabilityTextGLS2 {
+  margin-top: 14px;
+  margin-left: 2px;
+}
+.capabilityTextVolFin {
+  margin-top: 8px;
+}
+.capabilityTextVolFin {
+  margin-top: 8px;
+}
+
+.capabilityCell {
+  display: table-cell;
+  border: 1px solid var(--black2);
+  padding: 5px;
+  line-height: 1.2;
+  vertical-align: top;
+}
+
+.capabilityCell2 {
+  display: table-cell;
+  border: 1px solid var(--black2);
+  padding: 5px;
+  line-height: 1.2;
+  vertical-align: top;
+ 
+}
+
+/* Making the div borders curve */
+.capabilityCell:first-child {
+  border-top-left-radius: 20px;
+}
+.capabilityCell:last-child {
+  border-top-right-radius: 20px;
+}
+.capabilityCell:first-child {
+  border-bottom-left-radius: 20px;
+}
+.capabilityCell:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+.capabilityCell2:first-child {
+  border-top-left-radius: 20px;
+}
+.capabilityCell2:last-child {
+  border-top-right-radius: 20px;
+}
+.capabilityCell2:first-child {
+  border-bottom-left-radius: 20px;
+}
+.capabilityCell2:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+/* End Capability styles */
+
+/* Types styles */
+
+#types {
+  width: 100%;
+  display: table;
+  margin-top: 5px;
+}
+#typesTable {
+  display: table-row-group;
+}
+.typesRow {
+  display: table-row;
+}
+
+.typesCell {
+  display: table-cell;
+  border: 1px solid var(--black2);
+  /* padding: 2px; */
+  line-height: 1.5;
+  vertical-align: top;
+  padding-left: 7px;
+  /* padding-right: 20px; */
+  font-size: 13px;
+}
+.typesCell2 {
+  display: table-cell;
+  border: 1px solid var(--black2);
+  /* padding: 1px; */
+  line-height: 1.5;
+  vertical-align: top;
+  /* padding-right: 20px; */
+}
+.typesCell3 {
+  display: table-cell;
+  border: 1px solid var(--black2);
+  /* padding: 3px; */
+  line-height: 1.5;
+  vertical-align: top;
+  padding-left: 4px;
+  /* padding-right: 20px; */
+}
+.typesCell4 {
+  display: table-cell;
+  border: 1px solid var(--black2);
+  /* padding: 3px; */
+  line-height: 1.5;
+  vertical-align: top;
+  /* padding-right: 5px; */
+}
+.typesCell42 {
+  display: table-cell;
+  border: 1px solid var(--black2);
+  /* padding: 3px; */
+  line-height: 1.5;
+  vertical-align: top;
+  /* padding-right: 5px; */
+  padding-left: 4px;
+  font-size: 13px;
+}
+.typesCell5 {
+  display: table-cell;
+  border: 1px solid var(--black2);
+  /* padding: 12px; */
+  line-height: 1.5;
+  vertical-align: top;
+  padding-left: 4px;
+  /* padding-right: 20px; */
+}
+.typesCell6 {
+  display: table-cell;
+  border: 1px solid var(--black2);
+  /* padding: 12px; */
+  line-height: 1.5;
+  vertical-align: top;
+  padding-left: 4px;
+  /* padding-right: 20px; */
+}
+
+/* Making the div borders curve */
+.typesCell:first-child {
+  border-top-left-radius: 20px;
+}
+.typesCell:last-child {
+  border-top-right-radius: 20px;
+}
+.typesCell6:first-child {
+  border-bottom-left-radius: 20px;
+}
+.typesCell6:last-child {
+  border-bottom-right-radius: 20px;
+}
+
+/* End Types styles */
+
+/* Ficha camion styles */
+
+#fichaCamion {
+  width: 100%;
+  display: table;
+  margin-top: 10px;
+}
+
+#fichaCamionTable {
+  display: table-row-group;
+}
+.fichaCamionRow {
+  display: table-row;
+}
+.fichaCamionCell {
+  display: table-cell;
+  border: 1px solid var(--black2);
+  padding: 5px;
+  line-height: 1.2;
+  /* vertical-align: top; */
+  font-size: 12px;
+}
+.fichaCamionCell2 {
+  display: table-cell;
+  border: 1px solid var(--black2);
+  padding: 4px;
+  line-height: 1.2;
+  vertical-align: top;
+}
+
+/* Making the div borders curve */
+.fichaCamionCell:first-child {
+  border-top-left-radius: 15px;
+}
+.fichaCamionCell:last-child {
+  border-top-right-radius: 15px;
+}
+.fichaCamionCell2:first-child {
+  border-bottom-left-radius: 15px;
+}
+.fichaCamionCell2:last-child {
+  border-bottom-right-radius: 15px;
+}
+
+/* End Ficha Camion styles */
+
+.top {
+  display: flex;
+  padding-left: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.signature {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.driverSignatureText {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+.driverSignatureClient {
+  font-size: 12px;
+}
+.driverSignatureClientText {
+  font-size: 12px;
+  padding-top: 2px;
+}
+.signatureLine1 {
+  margin-top: 25px;
+  width: 200px;
+}
+.signatureLine2 {
+  margin-top: 25px;
+  width: 200px;
+  margin-bottom: 0;
+}
+
+
+.paymentDetails{
+  width: 100%;
+  display: flex;
+  margin-top: 5px;
+  justify-content: space-between;
+}

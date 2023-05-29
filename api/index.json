@@ -1,0 +1,197 @@
+{
+  "distribution-center":[
+    {
+      "id":1,
+      "phone": "829-223-1768",
+      "location": {
+        "address": "Las Americas Street #123",
+        "addressDetail": "",
+        "city": "Santo Domingo Este",
+        "province": "Santo Domingo",
+        "Country": "Republica Dominicana",
+        "postalCode": "12345",
+        "latitude": "18.45",
+        "longitude": "-70.45"
+      }
+    },
+    {
+      "id":2,
+      "phone": "829-123-4567",
+      "location": {
+        "address": "Las Americas Street #123",
+        "addressDetail": "",
+        "city": "Santo Domingo Este",
+        "province": "Santiago",
+        "Country": "Republica Dominicana",
+        "postalCode": "12345",
+        "latitude": "18.45",
+        "longitude": "-70.45"
+      }
+    }
+  ],
+  "warehouse":[
+    {
+      "id": 1,
+      "distributionCenter": 1,
+      "location": {
+        "address": "Las Americas Street #123",
+        "addressDetail": "",
+        "city": "Santo Domingo Este",
+        "province": "Santo Domingo",
+        "Country": "Republica Dominicana",
+        "postalCode": "12345",
+        "latitude": "18.45",
+        "longitude": "-70.45"
+      },
+      "products": [
+        {
+          "id": 1,
+          "unit": "kg",
+          "stock": 10,
+          "available": 9
+        },
+        {
+          "id": 2,
+          "unit": "kg",
+          "stock": 20,
+          "available": 19
+        },
+        {
+          "id": 3,
+          "unit": "kg",
+          "stock": 10,
+          "available": 9
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "distributionCenter": 2,
+      "location": {
+        "address": "Las Americas Street #123",
+        "addressDetail": "",
+        "city": "Santo Domingo Este",
+        "province": "Santo Domingo",
+        "Country": "Republica Dominicana",
+        "postalCode": "12345",
+        "latitude": "18.45",
+        "longitude": "-70.45"
+      },
+      "products": [
+        {
+          "id": 1,
+          "unit": "kg",
+          "stock": 5
+        },
+        {
+          "id": 2,
+          "unit": "kg",
+          "stock": 13
+        },
+        {
+          "id": 3,
+          "unit": "kg",
+          "stock": 16
+        }
+      ]
+    }    
+  ],
+  "product":[
+    {
+      "id":1,
+      "description":"Producto 1",
+      "price":100,
+      "unit":"kg",
+      "colors":[
+        {
+          "id":1,
+          "name":"Rojo"
+        },
+        {
+          "id":2,
+          "name":"Azul"
+        }
+      ],
+      "proportions":{
+        "unit":"cm",
+        "height":10,
+        "width":14,
+        "length":20
+      },
+      "stock":15
+    },
+    {
+      "id":2,
+      "description":"Producto 2",
+      "price":200,
+      "unit":"kg",
+      "colors":[
+        {
+          "id":1,
+          "name":"Rojo"
+        },
+        {
+          "id":2,
+          "name":"Azul"
+        }
+      ],
+      "proportions":{
+        "unit":"cm",
+        "height":10,
+        "width":14,
+        "length":20
+      },
+      "stock":33
+    },
+    {
+      "id":3,
+      "description":"Producto 3",
+      "price":300,
+      "unit":"kg",
+      "colors":[
+        {
+          "id":1,
+          "name":"Rojo"
+        },
+        {
+          "id":2,
+          "name":"Azul"
+        }
+      ],
+      "proportions":{
+        "unit":"cm",
+        "height":10,
+        "width":14,
+        "length":20
+      },
+      "stock":26
+    }
+  ],
+  "transit":[
+    {
+      "id":1,
+      "from": 1,
+      "to": 2,
+      "products": [
+        {
+          "id": 1,
+          "unit": "kg",
+          "stock": 1
+        },
+        {
+          "id": 2,
+          "unit": "kg",
+          "stock": 1
+        },
+        {
+          "id": 3,
+          "unit": "kg",
+          "stock": 1
+        }
+      ],
+      "date": "2018-01-01 00:00:00",
+      "deliveryDate": "2018-01-01 00:00:00",
+      "status": "En transito"
+    }
+  ]
+}

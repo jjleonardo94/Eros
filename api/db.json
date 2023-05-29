@@ -1,0 +1,144 @@
+{
+  "Plant": [
+    {
+      "PlantID": "3000",
+      "Name": "3000",
+      "Description": "Colas Sunix",
+      "CompanyCode": "1",
+      "Address": {
+        "Country": "USA",
+        "City": "Cherryville",
+        "County": "Cherry County",
+        "StreetName": "Cherry Lane",
+        "StreetNumber": "123",
+        "Location": {
+          "Latitude": "34.567",
+          "Longitude": "-112.567"
+        }
+      }
+    },
+    {
+      "PlantID": "3108",
+      "Name": "3108",
+      "Description": "Jacobo",
+      "CompanyCode": "1",
+      "Address": {
+        "Country": "USA",
+        "City": "Appleville",
+        "County": "Apple County",
+        "StreetName": "Apple Lane",
+        "StreetNumber": "123",
+        "Location": {
+          "Latitude": "34.567",
+          "Longitude": "-112.567"
+        }
+      }
+    },
+    {
+      "PlantID": "3012",
+      "Name": "3012",
+      "Description": "Sunix Bavaro",
+      "CompanyCode": "1",
+      "Address": {
+        "Country": "USA",
+        "City": "Pearville",
+        "County": "Pear County",
+        "StreetName": "Pear Lane",
+        "StreetNumber": "123",
+        "Location": {
+          "Latitude": "34.567",
+          "Longitude": "-112.567"
+        }
+      }
+    }
+  ],
+  "StoreLocation": [
+    {
+      "ID": "C028",
+      "Name": "C028",
+      "Description": "CS6150 12000 GL",
+      "PlantID": "3000",
+      "SalesOrganization": "1",
+      "DistributionChannel": "1"
+    },
+    {
+      "ID": "C029",
+      "Name": "C029",
+      "Description": "CS6151 12000 GL",
+      "PlantID": "3000",
+      "SalesOrganization": "1",
+      "DistributionChannel": "1"
+    },
+    {
+      "ID": "SXGP",
+      "Name": "SXGP-5000 Gas Pre",
+      "Description": "5000 Gas Pre",
+      "PlantID": "3108",
+      "SalesOrganization": "1",
+      "DistributionChannel": "1"
+    },
+    {
+      "ID": "SXGR",
+      "Name": "SXGR",
+      "Description": "10000 Gas Reg",
+      "PlantID": "3108",
+      "SalesOrganization": "1",
+      "DistributionChannel": "1"
+    }
+  ],
+  "Material": [
+    {
+      "MaterialID": "GP01004",
+      "Name": "GP01004",
+      "Description": "GASOLINA PREMIUM",
+      "UnitOfMeasure": "GN",
+      "CountryOfOrigin": "USA"
+    },
+    {
+      "MaterialID": "GR01003",
+      "Name": "GR01003",
+      "Description": "GASOLINA REGULAR",
+      "UnitOfMeasure": "GN",
+      "CountryOfOrigin": "USA"
+    },
+    {
+      "MaterialID": "GPE01005",
+      "Name": "GPE01005",
+      "Description": "GASOLINA PREMIUM  EXENTO",
+      "UnitOfMeasure": "GN",
+      "CountryOfOrigin": "USA"
+    }
+  ],
+  "Stock": [
+    {
+      "id": "fz29FPi2oJ",
+      "PlantID": "2",
+      "StoreLocationID": "2",
+      "MaterialID": "2",
+      "Quantity": "12",
+      "UnitOfMeasure": "Kg",
+      "StockType": "Unrestricted",
+      "Batch": "LS4WqBm7uZ"
+    },
+    {
+      "id": "4AWVzSmpbt",
+      "PlantID": "1",
+      "StoreLocationID": "4",
+      "MaterialID": "2",
+      "Quantity": "6",
+      "UnitOfMeasure": "Kg",
+      "StockType": "Quality Inspection",
+      "Batch": "3jVypmDSCe"
+    },
+    {
+      "id": "92CFmYAx64",
+      "PlantID": "3108",
+      "StoreLocationID": "SXGP",
+      "MaterialID": "GP01004",
+      "Quantity": "10",
+      "UnitOfMeasure": "",
+      "StockType": "Traslado Ce a Ce",
+      "Batch": "EKroII4PEE"
+    }
+  ]
+}
